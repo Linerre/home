@@ -5,8 +5,12 @@
   # environment.
   home.packages = with pkgs; [
     # Rust overlay provides cargo
+    # Other components available for x86_64-unknown-linux-gnu are:
+    # cargo clippy clippy-preview llvm-tools llvm-tools-preview reproducible-artifacts rls
+    # rls-preview rust rust-analysis rust-analyzer rust-analyzer-preview rust-docs rust-src
+    # rust-std rustc rustc-dev rustc-docs rustfmt rustfmt-preview
     (rust-bin.stable.latest.default.override {
-      extensions = [ "rust-src" ];
+      extensions = [ "rust-src" "rust-docs" "rustc-docs" ];
     })
     rust-analyzer
 
