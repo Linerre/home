@@ -11,6 +11,10 @@
   # environment.
   home.packages = with pkgs; [
     rust-analyzer
+
+    typst
+    typstfmt
+
     zellij
 
 
