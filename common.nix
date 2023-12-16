@@ -4,13 +4,11 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    #Rust
+    # Rust overlay provides cargo
     (rust-bin.stable.latest.default.override {
       extensions = [ "rust-src" ];
     })
-    # cargo
     rust-analyzer
-
 
     # Haskell bin (executables)
     # Avoid haskellPackages.fooXYZ as they may disppear (dropped), see:
@@ -40,10 +38,8 @@
     ocamlPackages.ocaml-lsp
     ocamlformat
 
-    # C
+    # C/CPP
     pkg-config
-
-    # CPP
 
     # Debugging
     gdb
@@ -58,6 +54,10 @@
     guile
     chicken
     chickenPackages_5.chickenEggs.tree
+
+    # Go
+    go
+    gopls
 
     # JavaScript
     nodejs_20                   # will install npm as well
