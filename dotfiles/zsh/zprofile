@@ -2,7 +2,6 @@
 # Environment variables  #
 # ########################
 #
-export ZDOTDIR=$HOME/projects/voidrice/.config/zsh
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
@@ -25,9 +24,6 @@ typeset -U PATH path
 
 # change Nodejs mirror
 export NODE_MIRROR=https://mirrors.ustc.edu.cn/node/
-
-# source  cargo only when rust was installed under $HOME
-[[ -d "$HOME/.cargo" ]] && . "$HOME/.cargo/env"
 
 # native texlive
 LX_VER=2023
