@@ -45,6 +45,9 @@
     gdb
     valgrind          # 3.21
 
+    # Bluespec HDL
+    bluespec
+
     # Java and JVM langs such as clojure
     jdk17_headless
     clojure
