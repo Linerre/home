@@ -53,9 +53,11 @@
     bluespec
 
     # Java and JVM langs such as clojure
-    jdk17_headless
+    jdk17
+    # jdk17_headless
     clojure
     clojure-lsp
+    digital
 
     # Scheme
     guile
