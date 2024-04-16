@@ -76,8 +76,8 @@
 
     # tools
     just
-    typst
-    typstfmt
+    # typst
+    # typstfmt
     zellij
 
     # Debugging
