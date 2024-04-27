@@ -42,11 +42,15 @@
     ocamlPackages.ocaml-lsp
     ocamlformat
 
+    # Coq
+    coq
+    coqPackages.coq-lsp
+
     # C/CPP
     pkg-config
 
     # Debugging
-    gdb
+    # gdb
     valgrind          # 3.21
 
     # Bluespec HDL
