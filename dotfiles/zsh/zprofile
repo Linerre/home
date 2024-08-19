@@ -9,6 +9,8 @@ export NIX_CONF_DIR=${XDG_CONFIG_HOME} # not necessary indeed but I like it anyw
 export KERNEL_NAME=$( uname | tr '[:upper:]' '[:lower:]' )
 export PATH=$HOME/.local/bin:$PATH
 export PROJECTS_HOME=$HOME/projects
+# For Nix
+export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 # see https://docs.npmjs.com/cli/v6/using-npm/config#npmrc-files
 export NPM_CONFIG_USERCONFIG=$HOME/.config/npm/npmrc
 
@@ -26,7 +28,7 @@ typeset -U PATH path
 export NODE_MIRROR=https://mirrors.ustc.edu.cn/node/
 
 # native texlive
-LX_VER=2023
+LX_VER=2024
 [[ -d "$HOME/.local/texlive/${LX_VER}" ]] && \
     { export PATH="$HOME/.local/texlive/${LX_VER}/bin/x86_64-linux:$PATH"
       export TEXLIVE_MAN="$HOME/.local/texlive/${LX_VER}/texmf-dist/doc/man"

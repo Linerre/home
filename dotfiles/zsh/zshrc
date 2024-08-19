@@ -51,11 +51,10 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # pacman
-alias ps='pacman -Si'
-alias ss='pacman -Ss'
-alias pi='pacman -Qi'
-alias up='sudo pacman -Syu'
-
+alias update='sudo pacman -Syu'
+alias orphan='pacman -Qdtq'
+# True orphans = orphan
+alias trop='pacman -Qtt'
 # git
 alias gt='git st'
 alias gl='git log'
